@@ -15,7 +15,7 @@ namespace tspp_lab1
         public Form1()
         {
             InitializeComponent();
-            string hello = "hello";  
+            
         }
     }
 }
