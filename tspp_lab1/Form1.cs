@@ -20,10 +20,13 @@ namespace tspp_lab1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double x, Sh;
-            x = Convert.ToDouble(textBox1.Text);
-            Sh = (Math.Exp(x) - Math.Exp(x-1)) / 2;
-            label1.Text = Sh.ToString();
+            if (textBox1.Text != "")
+            {
+                double x, Sh;
+                x = Convert.ToDouble(textBox1.Text);
+                Sh = (Math.Exp(x) - Math.Exp(x - 1)) / 2;
+                label1.Text = Sh.ToString();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
